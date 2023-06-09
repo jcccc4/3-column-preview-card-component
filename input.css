@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply text-white font-bsd;
+  }
+ 
+}
+@layer components {
+  .card {
+    @apply w-card h-card p-12  sm:h-card-dsk sm:w-card-dsk;
+  }
+  .head {
+    @apply text-title uppercase font-bold mt-[35px];
+  }
+  .des {
+    @apply text-des font-ld opacity-75 font-light my-[25px];
+  }
+  .btn{
+    @apply bg-white rounded-full w-[146px] font-ld text-des text-center  py-3 sm:mt-[58px] hover:text-white hover:border-2 hover:border-white hover:bg-transparent
+  }
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    color: black;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+}
